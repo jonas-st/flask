@@ -1,0 +1,7 @@
+#!/bin/bash
+#start virtualenv
+source env/bin/activate
+
+#run
+sudo python3 flask_app.py
+
