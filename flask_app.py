@@ -20,7 +20,7 @@ import urllib.request
 url_temp = 'https://www.zamg.ac.at/cms/de/wetter/wetteranimation/aladin_animation.php?imgtype=0'
 url_precip = 'https://www.zamg.ac.at/cms/de/wetter/wetteranimation/aladin_animation.php?imgtype=1'
 url_cloud = 'https://www.zamg.ac.at/cms/de/wetter/wetteranimation/aladin_animation.php?imgtype=2'
-re_animation = r'times\[[0-9]+\] = "(?P<date_string>.*) MESZ";\nimgnames\[[0-9]+\] = "(?P<url>.*)";'
+re_animation = r'times\[[0-9]+\] = "(?P<date_string>.*) ME[S]?Z";\nimgnames\[[0-9]+\] = "(?P<url>.*)";'
 
 def get_image_links(url):
     zamg_url_prefix = 'https://www.zamg.ac.at'
